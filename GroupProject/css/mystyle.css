@@ -1,0 +1,354 @@
+body,html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-image: url(https://visme.co/blog/wp-content/uploads/2017/07/50-Beautiful-and-Minimalist-Presentation-Backgrounds-03.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body{
+    color: black;
+}
+
+header{
+    position: fixed;
+    width:100%;
+    height: 75px;
+    line-height: 75px;
+    background: black;
+}
+
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content ul{
+    display: flex;
+}
+
+.header-content ul li{
+    margin-right: 30px;
+    list-style: none;
+
+}
+
+.header-content ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+label{
+    color: black;
+}
+
+.menu-btn{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.wrapper{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#check{
+    display: none;
+}
+
+#check:checked ~ .sidebar{
+    left: 0px;
+}
+
+#check:checked ~ label #btn{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+    left: 195px;
+
+}
+
+label #btn, label #cancel{
+    position: fixed;
+    cursor: pointer;
+}
+label #btn{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: white; 
+    padding:2px 4px;
+    transition: all .5s ;
+}
+
+label #cancel{
+    z-index: 1111;
+    left: -195px;
+    top: 19px;
+    font-size: 50px;
+    color: red;
+    padding: 2px 4px;
+    transition: all .5s ease;
+}
+
+.sidebar{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: auto;
+    margin-top: 70px;
+    background: black;
+    transition: all .5s ease;
+}
+
+.sidebar header{
+    position: absolute;
+    margin-top: -70px;
+}
+
+.sidebar ul{
+    padding-left: 0 !important;
+}
+
+.sidebar .nav-bar li{
+    list-style: none;
+    height: 50px;
+    padding: 10px;
+    position: flex;
+}
+
+.sidebar .nav-bar li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding-left: 40px;
+    transition: .5s;
+}
+
+.nav-bar li:hover a{
+    padding-left: 50px;
+}
+
+.sidebar .nav-bar a i{
+    margin-right: 100px;
+}
+
+.sidebar .nav-bar li:hover{
+    background: #dc3545;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+.header-nav ul li:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    background: black;
+    margin-top: 0px;
+    margin-left: -100px;
+}
+
+.header-nav ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+.header-nav ul li:hover .sub-menu-1 ul li{
+    width: 200px;
+    padding: 5px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.header-nav ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+
+#count{
+    border-radius: 50%;
+    position: relative;
+    top: -10px;
+    left: -5px;
+
+}
+
+.working-panel{
+    margin-top: 100px;
+    width: 100%;
+}
+
+#sectionview{
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+#deadline{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+#dbb{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+#studentview{
+    display: block;
+    padding: 10px;
+    margin-bottom: 30px;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+#ITstudentview{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+#Businessstudentview{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+#Designerstudentview{
+    display: block;
+    padding: 10px;
+    text-align: justify;
+    margin-top: 100px;
+}
+
+.display-chat{
+    height:500px;
+    background-color: rgb(238, 238, 238);
+    margin-bottom:4%;
+    overflow:auto;
+    padding:15px;
+    width: 50%;
+    place-items: center;
+    margin: auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.message{
+    background-color: hotpink;
+    color: black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 3%;
+}
+
+textarea{
+    width: 100%;
+
+}
+
+.mt-2{
+    margin: auto;
+    width: 50%
+}
+
+@media screen and (max-width:420px) {
+    .table thead{
+        display: none;
+
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        margin-bottom: 15px;
+    }
+
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .display-chat{
+        height:500px;
+        background-color: rgb(238, 238, 238);
+        margin-bottom:4%;
+        overflow:auto;
+        padding:15px;
+        width: 100%;
+        place-items: center;
+        margin: auto;
+
+        box-sizing: border-box;
+        border: 1px solid black;
+    }
+    textarea{
+        width: 100%;
+    }
+
+    .mt-2{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1050px){
+    .table thead{
+        display: none;
+
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%;
+    }
+
+    .table tr{
+        margin-bottom: 15px;
+    }
+
+    .table td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-size: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
