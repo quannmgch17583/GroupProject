@@ -124,7 +124,6 @@ CREATE TABLE `submission` (
 
 INSERT INTO submission VALUES("25","IT submission","1","dbbackup.PNG","4","IT","2021-03-25 17:21:47","Test","Accepted");
 INSERT INTO submission VALUES("27","Designer Submission","1","dbbackup.PNG","17","Designer","2021-03-25 17:20:48","","Accepted");
-INSERT INTO submission VALUES("29","Làm Sao Để Cắn Người","1","kien3khoang.jpg","19","Designer","2021-03-25 17:20:48","Test Comment 3","Accepted");
 INSERT INTO submission VALUES("31","Test Date","1","dbbackup.PNG","4","IT","2021-03-25 17:22:17","Hình ảnh chỉ mang tính chất minh họa nhưng Pin thích","Accepted");
 INSERT INTO submission VALUES("34","Test Submission B","1","2.PNG","5","Business","2021-03-30 16:14:25","","Accepted");
 INSERT INTO submission VALUES("35","Test Submission","1","dbbackup.PNG","4","IT","2021-03-31 17:09:43","","");
